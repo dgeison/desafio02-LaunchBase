@@ -10,7 +10,7 @@
   --color-primary: #f27781;
   --color-secondary: #18298c;
   --color-3: #04bf8a;
-  --color-4: #f2cf1d;
+  --color-4: #ffc936;
   --color-5: #f29f05;
 }
 
@@ -48,21 +48,54 @@ header {
 /* Main */
 
 .main {
-  background: #fff;
-  padding-bottom: 50px;
+  background-color: var(--color-4);
 }
 
-.main img {
-  margin-bottom: -250px;
+.courses {
+  padding: 32px;
+}
+.courses ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.courses ul li {
+ list-style: none;
+  font-size: 24px;
+  margin: 0 4px;
+  border:2px var(--color-primary) solid ;
+  border-radius: .25rem;
+}
+
+.courses ul li a {
+    padding: 30px;
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.courses ul li a:hover {
+    color: var(--color-5);
+    transition: color 700ms;
+  }
+  
+
+.foguete {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text {
+  background-color: #fff;
+  padding: 50px;
 }
 
 p {
-  background: #fff;
   font-family: "Yusei Magic", sans-serif;
   font-size: 1.5rem;
   margin: auto;
   width: 500px;
-  
 }
 
 /* Footer */
