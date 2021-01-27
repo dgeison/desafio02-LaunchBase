@@ -1,42 +1,86 @@
-@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" ;
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
 
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 :root {
-    --color-primary: #F27781;
-    --color-secondary: #18298C;
-    --color-3: #04BF8A;
-    --color-4: #F2CF1D;
-    --color-5: #F29F05;
+  --color-primary: #f27781;
+  --color-secondary: #18298c;
+  --color-3: #04bf8a;
+  --color-4: #f2cf1d;
+  --color-5: #f29f05;
 }
 
-body{
-    background: var(--color-4);
-    font-family: Roboto, serif;
-    columns: var(--color-secondary);
+body {
+  background: var(--color-4);
+  font-family: Roboto, serif;
+  columns: var(--color-secondary);
 }
 
-header{
-    padding: 32px;
-    border-bottom: 1px solid var(--color-5);
-    background: rgba(0, 0, 0, 0.1);
+header {
+  padding: 30px;
+  border-bottom: 1px solid var(--color-5);
+  background: rgba(0, 0, 0, 0.1);
 }
-.link{
-    text-align: center;
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.link a{
-    color: var(--color-secondary);
-    text-decoration: none;
-    font-size: 24px;
-    line-height: 14px;
-    margin: 0 30px;
+.link a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 14px;
+  margin: 0 30px;
+}
+.link a:hover {
+  color: var(--color-5);
+  transition: color 700ms;
+}
 
+.logo svg {
+  width: 80%;
 }
-.link a:hover{
-    color: var(--color-5);
-    transition: color 700ms;
+/* Main */
+
+.main {
+  background: #fff;
+  padding-bottom: 50px;
+}
+
+.main img {
+  margin-bottom: -250px;
+}
+
+p {
+  background: #fff;
+  font-family: "Yusei Magic", sans-serif;
+  font-size: 1.5rem;
+  margin: auto;
+  width: 500px;
+  
+}
+
+/* Footer */
+
+.footer {
+  background: rgba(0, 0, 0, 0.1);
+  border-top: 1px solid var(--color-5);
+
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer a {
+  margin: 0 30px;
+}
+.footer a img {
+  opacity: 0.5;
+  height: 2rem;
 }
